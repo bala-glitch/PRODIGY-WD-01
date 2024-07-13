@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Educational Website</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown">
+                <a href="#courses">Courses</a>
+                <div class="dropdown-content">
+                    <a href="#math">Math</a>
+                    <a href="#science">Science</a>
+                    <a href="#arts">Arts</a>
+                </div>
+            </li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#faculty">Faculty</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <section id="home">
+            <h1>Welcome to Our Educational Portal</h1>
+            <p>Your journey to knowledge starts here.</p>
+            <button onclick="scrollToSection('courses')">Explore Courses</button>
+        </section>
+
+        <section id="courses">
+            <h1>Our Courses</h1>
+            <p>Explore a wide range of subjects to enrich your knowledge.</p>
+            <div class="course-grid">
+                <div class="course-card">
+                    <img src="math.jpg" alt="Math">
+                    <h2>Math</h2>
+                </div>
+                <div class="course-card">
+                    <img src="science.jpg" alt="Science">
+                    <h2>Science</h2>
+                </div>
+                <div class="course-card">
+                    <img src="arts.jpg" alt="Arts">
+                    <h2>Arts</h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h1>About Us</h1>
+            <p>We are committed to providing the best education experience for our students.</p>
+        </section>
+
+        <section id="faculty">
+            <h1>Our Faculty</h1>
+            <p>Meet our highly qualified and experienced teachers.</p>
+        </section>
+
+        <section id="events">
+            <h1>Upcoming Events</h1>
+            <ul>
+                <li><strong>Science Fair:</strong> 1-7-24, Bangalore</li>
+                <li><strong>Math Olympiad:</strong> 11-7-24, Hyderabad</li>
+                <li><strong>Art Exhibition:</strong> 21-7-24, Chennai</li>
+            </ul>
+        </section>
+
+        <section id="blog">
+            <h1>Our Blog</h1>
+            <p>Read the latest articles and insights from our faculty and students.</p>
+        </section>
+
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p>Email: info@educationalportal.com</p>
+            <p>Phone: 123-456-7890</p>
+        </section>
+    </div>
+
+    <script src="task1.js"></script>
+</body>
+</html>
